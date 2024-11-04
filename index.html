@@ -4,33 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome Page</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
-    .welcome-container {
-      text-align: center;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      background-color: #ffffff;
-    }
-    .welcome-header {
-      font-size: 24px;
-      color: #333;
-      margin-bottom: 10px;
-    }
-    .welcome-message {
-      font-size: 18px;
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body>
   <div class="welcome-container">
@@ -39,10 +13,9 @@
     <button onclick="displayAlert()">클릭하여 인사받기</button>
   </div>
 
+  <script src="/src/js/main.js"></script>
   <script>
-    function displayAlert() {
-      alert('Hello! Vanilla JavaScript로 작동하는 프레임워크입니다!');
-    }
+    
   </script>
 </body>
 </html>
