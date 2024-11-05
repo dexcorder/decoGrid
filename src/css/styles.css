@@ -1,25 +1,44 @@
+/* 기본 페이지 레이아웃 */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  .welcome-container {
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-  }
-  .welcome-header {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  .welcome-message {
-    font-size: 18px;
-    color: #666;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* wrapper에 flex 레이아웃 적용 */
+.wrapper {
+  display: flex;
+  height: 100vh; /* 화면 전체 높이 사용 */
+}
+
+/* 콘텐츠 컨테이너 스타일 */
+.content-container {
+  flex: 1; /* 나머지 공간을 차지하도록 설정 */
+  padding: 20px;
+}
+
+/* 사이드바 iframe 스타일 */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  border: none;
+  transition: width 0.7s ease; /* 부드러운 애니메이션 효과 */
+}
+
+.sidebar.collapsed {
+  width: 50px; /* 닫힐 때의 너비 */
+}
+
+.content-container {
+  background-color: #ffffff;
+}
+
+.content-header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content-message {
+  font-size: 18px;
+  color: #666;
+}

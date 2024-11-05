@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+  <!-- 레이아웃을 위한 wrapper -->
+  <div class="wrapper" id="wrapper">
+    <!-- 사이드바 iframe -->
+    <iframe src="./common/sidebar.html" class="sidebar" frameborder="0"></iframe>
+
+    <!-- 콘텐츠 컨테이너 -->
+    <div class="content-container">
+      <h1 class="content-header">Welcome to My Framework</h1>
+      <p class="content-message">Vanilla JavaScript로 구축된 경량 프레임워크입니다.</p>
+      <button onclick="displayAlert()">클릭하여 인사받기</button>
+    </div>
+  </div>
+
+  <script src="/src/js/common.js"></script>
+</body>
+</html>
